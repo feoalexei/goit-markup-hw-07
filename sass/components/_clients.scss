@@ -1,0 +1,27 @@
+.clients__list {
+    display: flex;
+    gap: 30px;
+}
+
+.clients__item {
+    width: calc((100% - 150px) / 6);
+    height: 92px;
+}
+
+.clients__link {
+    @extend %centeredFlex;
+    width: 100%;
+    height: 100%;
+    border: 1px solid $grey-icon-color;
+    border-radius: 4px;
+    fill: $grey-icon-color;
+    transition:
+        border-color $main-transition,
+        fill $main-transition;
+
+    &:hover,
+    &:focus {
+    border-color: $accent-color;
+    fill: $accent-color;
+    }
+}

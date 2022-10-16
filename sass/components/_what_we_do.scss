@@ -1,0 +1,15 @@
+.products {
+    padding-top: 0;
+}
+
+.products__gallery {
+    display: flex;
+
+    & li:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.products__item {
+    position: relative;
+}
